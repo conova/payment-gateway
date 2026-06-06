@@ -10,7 +10,7 @@ import { internalPaymentsRoutes } from './routes/internal/payments.js';
 
 async function buildApp() {
   const app = Fastify({
-    logger,
+    loggerInstance: logger,
     disableRequestLogging: env.NODE_ENV === 'production',
     bodyLimit: 1_048_576,
   });
