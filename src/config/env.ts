@@ -30,7 +30,7 @@ const envSchema = z.object({
   // Auth
   CORE_API_KEY: z.string().min(16),
   ADMIN_API_KEY: z.string().min(16),
-  JWT_SECRET: z.string().min(16),
+  JWT_SECRET: z.string(),
   JWT_ISSUER: z.string().optional(),
 });
 
